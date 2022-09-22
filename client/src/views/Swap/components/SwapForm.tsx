@@ -1,4 +1,6 @@
+import { AutoColumn } from "../../../components/Layout/Column";
 import { CurrencyInputHeader } from "./CurrencyInputHeader";
+import { Wrapper } from "./styleds";
 
 export const SwapForm = (
     { setIsChartDisplayed, isChartDisplayed } 
@@ -13,6 +15,10 @@ export const SwapForm = (
                 setIsChartDisplayed={setIsChartDisplayed} 
                 isChartDisplayed={isChartDisplayed} 
             />
+        <Wrapper id="swap-page" style={{ minHeight: '412px' }}>
+          <AutoColumn gap="sm">
+          </AutoColumn>
+        </Wrapper>
       </>  
     );
 }

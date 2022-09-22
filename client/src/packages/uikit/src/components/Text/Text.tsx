@@ -11,7 +11,7 @@ const getColor = ({ color, theme }: ThemedProps) => {
   return getThemeValue(theme, `colors.${color}`, color);
 };
 
-const Text = styled.div<TextProps>`
+const Text : any = styled.div<TextProps>`
   color: ${getColor};
   font-weight: ${({ bold }) => (bold ? 600 : 400)};
   line-height: 1.5;
