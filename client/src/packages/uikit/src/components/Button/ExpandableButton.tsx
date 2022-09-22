@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "../Svg";
+import { ChevronDownIcon, ChevronUpIcon } from "../../../../../../../../../tut/pancake-frontend/packages/uikit/src/components/Svg";
 import Button from "./Button";
 import IconButton from "./IconButton";
 

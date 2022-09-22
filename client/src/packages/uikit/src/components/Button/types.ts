@@ -1,6 +1,6 @@
 import { ElementType, ReactNode } from "react";
 import { LayoutProps, SpaceProps } from "styled-system";
-import type { PolymorphicComponentProps } from "../../util/polymorphic";
+import type { PolymorphicComponentProps } from "../../../../../../../../../tut/pancake-frontend/packages/uikit/src/util/polymorphic";
 
 export const scales = {
   MD: "md",

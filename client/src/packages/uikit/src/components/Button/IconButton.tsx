@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PolymorphicComponent } from "../../util/polymorphic";
+import { PolymorphicComponent } from "../../../../../../../../../tut/pancake-frontend/packages/uikit/src/util/polymorphic";
 import Button from "./Button";
 import { BaseButtonProps } from "./types";
 

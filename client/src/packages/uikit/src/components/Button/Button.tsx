@@ -1,5 +1,5 @@
 import React, { cloneElement, ElementType, isValidElement } from "react";
-import EXTERNAL_LINK_PROPS from "../../util/externalLinkProps";
+import EXTERNAL_LINK_PROPS from "../../../../../../../../../tut/pancake-frontend/packages/uikit/src/util/externalLinkProps";
 import StyledButton from "./StyledButton";
 import { ButtonProps, scales, variants } from "./types";
 

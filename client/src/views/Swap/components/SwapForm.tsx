@@ -1,9 +1,18 @@
 import { CurrencyInputHeader } from "./CurrencyInputHeader";
 
-export const SwapForm = () => {
+export const SwapForm = (
+    { setIsChartDisplayed, isChartDisplayed } 
+    : 
+    { setIsChartDisplayed: any, isChartDisplayed: boolean}
+) => {
     return (
       <>
-        <CurrencyInputHeader />
+        <CurrencyInputHeader
+                title={'Swap'} 
+                subtitle={"Trade tokens in an instant"} 
+                setIsChartDisplayed={setIsChartDisplayed} 
+                isChartDisplayed={isChartDisplayed} 
+            />
       </>  
     );
 }
