@@ -46,7 +46,7 @@ export const CurrencyInputHeader = ({
                     </ColoredIconButton>
                 </Flex>
                 <Flex flex="1" justifyContent="center">
-                
+                    <h2>{title}</h2>
                 </Flex>
             </Flex>
         </CurrencyInputContainer>
