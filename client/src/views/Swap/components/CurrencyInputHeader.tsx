@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ChartDisableIcon } from '../../../../../../../tut/pancake-frontend/packages/uikit/src/components/Svg';
+import { ChartDisableIcon, ChartIcon } from '../../../../../../../tut/pancake-frontend/packages/uikit/src/components/Svg';
 import Flex from '../../../packages/uikit/src/components/Box/Flex';
 import IconButton from '../../../packages/uikit/src/components/Button/IconButton';
 
@@ -36,9 +36,18 @@ export const CurrencyInputHeader = ({
     return (
         <CurrencyInputContainer>
             <Flex width="100%" alignItems="center" justifyContent="space-between">
-                <ColoredIconButton onClick={toggleChartDisplayed} variant="text" scale="sm">
-                    <ChartDisableIcon color="textSubtle" />
-                </ColoredIconButton>
+                <Flex flex="1">
+                    <ColoredIconButton onClick={toggleChartDisplayed} variant="text" scale="sm">
+                    {isChartDisplayed ? (
+                        <ChartDisableIcon color="textSubtle" />
+                    ) : (
+                        <ChartIcon width="24px" color="textSubtle" />
+                    )}
+                    </ColoredIconButton>
+                </Flex>
+                <Flex flex="1" justifyContent="center">
+                
+                </Flex>
             </Flex>
         </CurrencyInputContainer>
     );
