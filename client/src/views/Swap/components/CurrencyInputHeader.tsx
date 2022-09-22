@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ChartDisableIcon, ChartIcon, HistoryIcon } from '../../../../../../../tut/pancake-frontend/packages/uikit/src/components/Svg';
 import Flex from '../../../packages/uikit/src/components/Box/Flex';
+import Text from '../../../packages/uikit/src/components/Text';
 import IconButton from '../../../packages/uikit/src/components/Button/IconButton';
 
 const CurrencyInputContainer = styled(Flex)`
@@ -53,6 +54,11 @@ export const CurrencyInputHeader = ({
                         <HistoryIcon color="textSubtle" width="24px" />
                     </IconButton>
                 </Flex>
+            </Flex>
+            <Flex alignItems="center">
+                <Text color="textSubtle" fontSize="14px">
+                    {subtitle}
+                </Text>
             </Flex>
         </CurrencyInputContainer>
     );
